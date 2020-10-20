@@ -17,6 +17,14 @@ p {
     text-align: justify;
     text-indent: 50px;
 }
+header#cabecalho {
+    
+}
+header#cabecalho img#icone {
+    position: absolute;
+    left: 80%;
+    top: 60px;
+}
 /*Formatação de imagem com legenda*/
 figure.foto-legenda {
     position: relative;
@@ -76,8 +84,9 @@ nav#menu a:hover {
 }
 /*Formatações da DIV principal*/
 div#interface {
-    widht: 900px;
+    widht: 800px;
     background-color: #ffffff;
     margin: -20px auto 0px auto;
-    box-shadow: 1px 1px 20px #ffff00;
+    box-shadow: 1px 1px 20px #000000;
+    padding: 10px;
 }
