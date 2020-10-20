@@ -2,3 +2,5 @@
 public_html/.DS_Store
 public_html/_css/.DS_Store
 public_html/_imagens/.DS_Store
+*.xml
+nbproject/private/private.xml

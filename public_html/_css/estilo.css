@@ -8,4 +8,76 @@ https://www.cursoemvideo.com
 tag.nomeclasse{}
 tag#Nomeid{}
 */
-
+/*Formatações gerais*/
+body {
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+/*Formatação de imagem com legenda*/
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption {
+    opacity: 0; /*cria uma opacitade de 0 para que a legenda fique escondidas*/
+    position: absolute; /*posição relativa ao seu conteiner*/
+    top: 0px; /*posição / altura em que a caption ficará*/
+    background: rgba(0, 0, 0, 0.5); /*cor de fundo preto com transparência 50%*/
+    width: 100%; /*redimenciona a largura para ocupar o tamanho da imagem*/
+    height: 100%; /*redimenciona a altura para ocupar o tamanho da imagem*/
+    color: white; /*cor da fonte*/
+    padding: 10px; /*distanciamento em relação a borda*/
+    box-sizing: border-box; /*cria uma caixa dentro da borda*/
+    transition: 0.5s;
+}
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+/*Formatacao do Menu*/
+nav#menu {
+    display: block;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu ul {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 5px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover {
+    background-color: black;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*Formatações da DIV principal*/
+div#interface {
+    widht: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 1px 1px 20px #ffff00;
+}
