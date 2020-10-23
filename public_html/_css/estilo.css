@@ -4,6 +4,11 @@ Curso em vìdeo
 https://www.cursoemvideo.com
 */
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Merienda+One&family=Parisienne&family=Satisfy&family=Titillium+Web&family=Yesteryear&display=swap');
+@font-face {
+    font-family: 'fonte-logo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}
 /*
 tag.nomeclasse{}
 tag#Nomeid{}
@@ -12,18 +17,36 @@ tag#Nomeid{}
 body {
     background-color: white;
     color: rgba(0, 0, 0, 1);
+    font-family: Arial, sans-serif;
 }
 p {
     text-align: justify;
     text-indent: 50px;
 }
 header#cabecalho {
-    
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url(../_imagens/glass-logo-peq.jpg) no-repeat 0px 95px;
 }
 header#cabecalho img#icone {
     position: absolute;
     left: 80%;
-    top: 60px;
+    top: 65px;
+}
+header#cabecalho h1 {
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
 }
 /*Formatação de imagem com legenda*/
 figure.foto-legenda {
@@ -89,4 +112,102 @@ div#interface {
     margin: -20px auto 0px auto;
     box-shadow: 1px 1px 20px #000000;
     padding: 10px;
+}
+section#corpo {
+    display: block;
+    width: 50%;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px;
+}
+article#noticia-principal h2 {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px;
+}
+header#cab-artigo h1 {
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+header#cab-artigo h2 {
+    font-size: 12pt;
+    color: #606060;
+    background-color: #ffffff;
+    margin: 0px;
+}
+header#cab-artigo h3 {
+    margin-bottom: 0px;
+    font-size: 10pt;
+    color: #606060;
+}
+.direita {
+    text-align: right;
+}
+table#tblespec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table#tblespec caption {
+    color: #888888;
+    font-size: 15pt;
+    font-weight: bold;
+}
+table#tblespec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    font-weight: bold;
+    margin-top: 10px;
+}
+table#tblespec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+table#tblespec td.ce {
+    text-align: right;
+    vertical-align: top;
+    color: #ffffff;
+    background-color: #000000;
+}
+table#tblespec td.cd {
+    text-align: left;
+    background-color: #cecece;
+}
+aside#lateral {
+    display: block;
+    width: 47%;
+    float: right;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+aside#lateral h1 {
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
 }
