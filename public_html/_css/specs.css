@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+table#oculos {
+    border: 0px;
+    width: 100%;
+    margin: auto;
+}
+table#oculos tr {
+    border: 0px;
+    width: 100%;
+    padding: 0;
+}
+table#oculos td {
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+img#gglass {
+    margin: 0;
+    padding: 0;
+}
+img#imgTela {
+    display: block;
+    text-align: center; 
+}
+iframe#frame-specs {
+    border: none;
+    width: 90%;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
