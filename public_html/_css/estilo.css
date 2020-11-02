@@ -91,7 +91,7 @@ nav#menu li {
     transition: background-color 0.5s;
 }
 nav#menu li:hover {
-    background-color: black;
+    background-color: #606060;
 }
 nav#menu a {
     color: black;

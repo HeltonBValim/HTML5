@@ -6,6 +6,13 @@
         <link rel="stylesheet" type="text/css" href="_css/form.css"/>
         <title>Tudo sobre o Google Glass</title>
         <script src="_javascript/funcoes.js"></script>
+        <script>
+            function calc_total() {
+                var qtd = parseInt(document.getElementById("cQtd").value);
+                tot = qtd * 1500;
+                document.getElementById("cTot").value = tot;
+            }
+        </script>
     </head>
     <body>
         <div id="interface">
@@ -37,7 +44,7 @@
                         </hgroup>
                     </header>
 
-                    <form method="post" id="fContado" action="mailto:helton74@gmail.com">
+                    <form method="post" id="fContado">
                         <fieldset id="usuario">
                             <legend>Identificação do Usuário</legend>
                             <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="40" placeholder="Nome completo"/></p> 
@@ -105,18 +112,20 @@
                         <fieldset id="mensagem">
                             <legend>Mensagem do Usuário</legend>
                             <p><label for="cUrg">Grau de Urgência:</label> Min.<input type="range" name="rUrg" id="cUrg" min="0" max="10" step="2"/>Máx.</p>
-                            <p><label for="cMsg">Mensagem:</label> <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite sua mensagem."></textarea></p>
+                            <p><label for="cMsg">Mensagem:</label></p>
+                            <p><textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite sua mensagem."></textarea></p>
                         </fieldset>
 
                         <fieldset id="pedido">
                             <legend>Quero um Google Glass</legend>
                             <p><input type="checkbox" name="tPed" id="cPed"/><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                            <p><label for="cCor">Cor:</label> <input type="color" name="tCor" id="cCor"/></p>
-                            <p><label for="cQtd">Quantidade:</label> <input type="number" name="nQdt" id="cQtd" min="1" max="5"></p>
-                            <p><label for="cTot">Preço Total: R$</label> <input type="number"></p>
+                            <p><label for="cCor">Cor:</label> <input type="color" name="tCor" id="cCor" value="#0000ff"/></p>
+                            <p><label for="cQtd">Quantidade:</label> <input type="number" name="nQdt" id="cQtd" min="0" max="5" value="0" oninput="calc_total()"/></p>
+                            <p><label for="cTot">Preço Total: R$</label> <input type="text" name="tTot" id="cTot" placeholder="Total à pagar" readonly/></p>
                         </fieldset>
 
-                        <input type="submit" value="Enviar" id="bEnviar"/>
+                        <br/>
+                        <input type="image" name="iEnviar" src="_imagens/botao-enviar.png"/>
                     </form>
                 </article>
             </section>
@@ -125,7 +134,9 @@
                 <p>
                     Copyright 2013 - by Gustavo Guanabara<br/>
                     <a href="http://www.facebook.com/cursosemvideo" target="_blank">Facebook</a> | 
-                    <a href="http://www.twitter.com/cursosemvideo" target="_blank">Twitter</a>
+                    <a href="http://www.twitter.com/cursosemvideo" target="_blank">Twitter</a><br/>
+                    Aula finalizada em 02/11/2020, por <a href="https://heltonbvalim.github.io/curriculum_vitae/" target="_blank">HeltonBValim</a></br>
+                    Os arquivos estão disponíveis no meu <a href="https://github.com/HeltonBValim/curriculum_vitae" target="_blank">GitHub</a>.
                 </p>
             </footer>
         </div>
