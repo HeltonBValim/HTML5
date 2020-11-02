@@ -1,0 +1,5 @@
+﻿<?php
+	$pgn = isset($_GET["pgn"])?$_GET["pgn"].".php":"home.php";
+	$icn = isset($_GET["pgn"])?$_GET["pgn"]:"home";
+	// echo $icn." -> ".$pgn;
+?>

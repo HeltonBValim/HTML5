@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'Fonte1';
+	src: url("../fonts/bubblegum-sans-regular.otf");
+}
+
+/*Corpo do site*/
+body {
+	background-color: #dddddd;
+}
+
+/*Parágrafos*/
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/*Menu*/
+nav#menu {
+	display: block;
+}
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0px;
+	right: 75px;
+}
+nav#menu li {
+	display: inline-block;
+	background-color: #000000;
+	padding: 10px;
+	transition: background-color .3s;
+}
+nav#menu li:hover {
+	background-color: #888888;
+}
+nav#menu h1 {
+	display: none;
+}
+nav#menu a {
+	text-decoration: none;
+	color: #ffffff;
+}
+nav#menu a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+/*Cabecalho da Página*/
+header#cabecalho img#icone {
+	position: absolute;
+	right: 80px;
+	top: 100px;
+	width: 12%;
+	height: 12%;
+}
+header#cabecalho img#logo {
+	position: absolute;
+	top: 180px;
+	left: 45%;
+}
+header#cabecalho hgroup#cabeca {
+	padding: 0px;
+	color: #606060;
+}
+header#cabecalho hgroup#cabeca h1 {
+	font-family: 'Fonte1', sans-serif;
+	font-size: 35pt;
+	margin-bottom: 0px;
+	margin-top: 50px; 
+}
+header#cabecalho hgroup#cabeca h2 {
+	font-family: 'Fonte1', sans-serif;
+	font-size: 25pt;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+header#cabecalho hgroup#cabeca h3 {
+	font-size: 20pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho hgroup#cabeca h4 {
+	font-size: 15pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+header#cabecalho hgroup#cabeca h5 {
+	font-size: 10pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/*Divisões da página*/
+div#interface {
+	background-color: #ffffff;
+	box-shadow: 5px 5px 8px rgba(0,0,0,0.7);
+	width: 95%;
+	height: 100%;
+	margin: auto;
+	padding: 10px;
+}
+div#interface footer#rodape {
+	display: block;
+	position: relative;
+	margin: auto;
+}
+div#cabecalho
+, div#conteudo {
+	background-color: #ffffff;
+}
+div#conteudo h2 {
+	font-size: 15pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;	
+}
+div#cabeca {
+	border-bottom: 1px solid #606060;
+}
+div#bussola {
+	padding: 0;
+	border-bottom: 1px solid #606060;
+}
+div#bussola h4 {
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: 0;
+}
+div#bussola h4 {
+	font-family: Arial, sans-serif;
+	font-size: 12pt;
+}
+section#ldEsq {
+	display: block;
+	float: left;
+	width: 50%;
+	border-right: 1px solid #606060;
+	padding-right: 5px;
+}
+section#ldEsq h2{
+	font-size: 15pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+}
+aside#ldDir {
+	background-color: #dddddd;
+	display: block;
+	padding-left: 3px;
+	float: right;
+	width: 49%;
+}
+aside#ldDir h1{
+	font-size: 20pt;
+	color: #606060;
+	text-align: center;
+	padding: 5px 0px 5px 10px;
+}
+aside#ldDir h2{
+	font-size: 15pt;
+	color: #ffffff;
+	background-color: #606060;
+	padding: 5px 0px 5px 10px;
+}
+footer#rodape {
+	clear: both;
+	border-top: 1px double #606060;
+}
+footer#rodape p {
+	text-align: center;
+	text-indent: none;
+}
+
+/*Foto com legenda*/
+figure.foto-legenda {
+	position: relative;
+	border: 0px solid rgba(0,0,0,.5);
+	box-shadow: 2px 2px 5px rgba(0,0,0,1);
+	width: 70%;
+	height: 45%;
+	margin: auto auto auto auto;
+}
+figure.foto-legenda img {
+	height: 100%;
+	width: 100%;
+}
+figure.foto-legenda figcaption {
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: #ffffff;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	opacity: 0;
+	transition: 1s opacity;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/*Tabela de especificações*/
+table#tblespecs {
+	border: 1px solid #606060;
+	/*border-spacing: 0px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+table#tblespecs td {
+	border: 1px solid #606060;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+}
+table#tblespecs td.ce {
+	color: #ffffff;
+	font-weight: bold;
+	background-color: #606060;
+	text-align: right;
+	vertical-align: top;
+}
+table#tblespecs td.cd {
+	text-align: left;
+}
+table#tblespecs caption {
+	color: #888888;
+	font-size: 12pt;
+	font-weight: bolder;
+}
+table#tblespecs caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 5px;
+}
+
+/*Ancoras*/
+input#topo {
+	display: none;
+}
+
+/*Classes Genéricas*/
+.mgdireita {
+	text-align: right;
+}
+

@@ -10,3 +10,11 @@ nbproject/private/private.xml
 *.xml
 *.xml
 nbproject/private/private.xml
+public_html/MinhaVersao/.DS_Store
+*.iml
+public_html/MinhaVersao/css/.DS_Store
+public_html/MinhaVersao/imagens/.DS_Store
+public_html/MinhaVersao/textos/.DS_Store
+*.properties
+public_html/MinhaVersao/media/.DS_Store
+public_html/MinhaVersao/javascript/.DS_Store

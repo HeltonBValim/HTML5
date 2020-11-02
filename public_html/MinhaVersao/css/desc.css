@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+	background-color: #ffffff;
+	font-family: Arial, sans-serif;
+	font-size: 10pt;
+}
+p {
+	text-align: justify;
+	text-indent: 20px;
+}
+article {
+	margin-bottom: 250px;
+}
+article h1 {
+	font-size: 15pt;
+	color: #ffffff;
+	background-color: rgba(0,0,0,.5);
+	padding: 5px;
+	margin: 0;
+}
+article h2 {
+	font-size: 12pt;
+	color: #606060;
+	padding-right: 5px;
+	margin: 0;
+}
+img.meio {
+	margin-right: auto;
+	margin-left: auto;
+}
+img.imgdir {
+	display: block;
+	float: right;
+	margin-left: 5px;
+}

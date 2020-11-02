@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title>Teste Script</title>
+    <meta charset="UTF-8" />
+    <script>
+    	var quebrada = false;
+	function mudaLampada(tipo) {
+            if (!quebrada) {
+            	document.getElementById("Luz").src = "_imagens/" + tipo + ".jpg";
+                if (tipo == 'lampada-quebrada'){
+                	quebrada = true;
+                }
+            }
+        }
+	</script>
+</head>
+
+<body>
+	<table border=1 align="center">
+    	<tr>
+        	<td align="center">
+                Veja a lâmpada funcionando...<br/>
+                Mas cuidado, pois é frágil! <br/>
+                <img id="Luz" src="_imagens/lampada-apagada.jpg" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

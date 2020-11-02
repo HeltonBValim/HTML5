@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+form#frmContato {
+	width: 50%;
+	margin: auto;
+}
+fieldset#usuario {
+	background: url(../imagens/icone-contato.png) no-repeat 95% 95%;
+}
+fieldset#endereco {
+	background: url(../imagens/icone-endereco.png) no-repeat 95% 95%;
+}
+fieldset#mensagem {
+	background: url(../imagens/icone-mensagem.png) no-repeat 95% 95%;
+}
+fieldset#pedido {
+	background: url(../imagens/icone-pedido.png) no-repeat 95% 95%;
+}
+input, textarea {
+	background-color: rgba(255,255,255,.5);
+}
+input:hover, textarea:hover {
+	background-color: #cecece;
+}

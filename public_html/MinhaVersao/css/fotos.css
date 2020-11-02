@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+ul#album {
+	width: 100%;
+	margin: auto;
+	padding: 25px;
+	overflow: hidden;
+	list-style: none;
+}
+ul#album li {
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 50px;
+	border: .5px solid #000000;
+	background-color: #ffffff;
+	box-shadow: 1px 1px 4px rgba(0,0,0,.9)
+}
+ul#album li:hover {
+	-webkit-transform: scale(1.5);
+	-webkit-transition: all .5s;
+}
+ul#album li span {
+	opacity: 0;
+	padding: 5px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	background-color: rgba(0,0,0,.3);
+	line-height: 370px;
+}
+ul#album li:hover span {
+	opacity: 1;
+}
+ul#album li#foto01 {
+	background: url(../imagens/galeria-01.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album li#foto01:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album li#foto02 {
+	background: url(../imagens/galeria-02.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album li#foto02:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album li#foto03 {
+	background: url(../imagens/det-bateria.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: 150px 190px;
+	background-color: #ffffff;
+}
+ul#album li#foto03:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album li#foto04 {
+	background: url(../imagens/glass-oculos-preto-med.png) no-repeat;
+	background-position: 50% 50%;
+	background-size: 250px 151px;
+	background-color: #ffffff;
+}
+ul#album li#foto04:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album li#foto05 {
+	background: url(../imagens/galeria-05.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album li#foto05:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
+ul#album li#foto06 {
+	background: url(../imagens/galeria-06.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: 400px 400px;
+	background-color: #ffffff;
+}
+ul#album li#foto06:hover {
+	background-position: 0px 0px;
+	background-size: 200px 200px;
+}
