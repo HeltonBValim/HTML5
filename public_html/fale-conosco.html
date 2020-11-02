@@ -92,7 +92,7 @@
                                         <option value="SC">Santa Catarina(SC)
                                     </optgroup>
                                 </select></p>
-                                <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="40" list="cidades"/>
+                            <p><label for="cCid">Cidade:</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="40" list="cidades"/>
                                 <datalist id="cidades">
                                     <option value="Rio de Janeiro"></option>
                                     <option value="Nova Iguaçú"></option>
@@ -110,10 +110,10 @@
 
                         <fieldset id="pedido">
                             <legend>Quero um Google Glass</legend>
-                            <p>Gostaria de adquirir um Google Glass quando disponível</p>
-                            <p><label>Cor:</label></p>
-                            <p><label>Quantidade:</label></p>
-                            <p><label>Preço Total: R$</label></p>
+                            <p><input type="checkbox" name="tPed" id="cPed"/><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                            <p><label for="cCor">Cor:</label> <input type="color" name="tCor" id="cCor"/></p>
+                            <p><label for="cQtd">Quantidade:</label> <input type="number" name="nQdt" id="cQtd" min="1" max="5"></p>
+                            <p><label for="cTot">Preço Total: R$</label> <input type="number"></p>
                         </fieldset>
 
                         <input type="submit" value="Enviar" id="bEnviar"/>

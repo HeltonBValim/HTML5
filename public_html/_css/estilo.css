@@ -116,6 +116,34 @@ section#corpo {
     border-right: 1px solid #606060;
     padding-right: 15px;
 }
+aside#lateral {
+    display: block;
+    width: 47%;
+    float: right;
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+aside#lateral h1 {
+    font-family: 'fonte-logo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
+}
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p {
+    text-align: center;
+}
 article#noticia-principal h2 {
     font-size: 12pt;
     font-weight: bold;
@@ -178,32 +206,4 @@ table#tblespec td.ce {
 table#tblespec td.cd {
     text-align: left;
     background-color: #cecece;
-}
-aside#lateral {
-    display: block;
-    width: 47%;
-    float: right;
-    background-color: #dddddd;
-    padding: 5px;
-    margin: 5px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-aside#lateral h1 {
-    font-family: 'fonte-logo', sans-serif;
-    font-size: 20pt;
-    color: #606060;
-    margin-top: 0px;
-}
-aside#lateral h2 {
-    background-color: #606060;
-    font-size: 12pt;
-    color: #ffffff;
-    padding: 5px;
-}
-footer#rodape {
-    clear: both;
-    border-top: 1px solid #606060;
-}
-footer#rodape p {
-    text-align: center;
 }
