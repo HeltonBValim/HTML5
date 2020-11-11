@@ -18,3 +18,5 @@ public_html/MinhaVersao/textos/.DS_Store
 *.properties
 public_html/MinhaVersao/media/.DS_Store
 public_html/MinhaVersao/javascript/.DS_Store
+*.xml
+nbproject/private/private.xml
